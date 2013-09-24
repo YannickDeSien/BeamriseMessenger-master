@@ -1,0 +1,249 @@
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: normal;
+	src: url("fonts/Roboto-Thin-webfont.ttf");
+	src: local("fonts/Roboto-Thin-webfont.ttf"), local("fonts/Roboto-Thin-webfont.ttf"), url("fonts/Roboto-Thin-webfont.ttf") format("truetype");
+}
+html, body {	height: 100%;}
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: Roboto, sans-serif, serif, mono;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+a {	text-decoration: none;}
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	height: 50px;
+	background-color: #82BF4A;
+	background-image: -webkit-linear-gradient(top, #82BF4A, #92D653);
+	-webkit-box-shadow: 0 0 3px #000000;
+	vertical-align: middle;
+	z-index: 99;
+	text-align: center;
+}
+
+.headerIcon, .headerIconPressed {
+	float: left;
+	height: 50px;
+}
+.headerIcon {
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+	background-color: transparent;
+}
+.headerIconPressed {
+	text-shadow: 0 0 0;
+	background-color: #F2F2F2;
+}
+
+.headerText {
+	line-height: 48px;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.headerRightButton, .headerRightButtonPressed {
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	width: 50px;
+	text-align: center;
+	vertical-align: middle;
+	/*border-left: solid 1px #0044cc;*/
+}
+.headerRightButton {
+	background-color: transparent;
+}
+.headerRightButtonPressed {
+	background-color: #F2F2F2;
+}
+.headerRightButton img {
+	vertical-align: middle;
+}
+.headerRightButtonPressed img {
+	vertical-align: middle;
+}
+
+.mainWrapper, .contactsWrapper, .chatWrapper {
+	z-index: 98;
+	padding-top: 54px;
+	padding-bottom: 46px;
+	text-align: center;
+}
+.contactsWrapper, #divContactsScreen {	background-color: #F2F2F2;}
+.chatWrapper, #divChatScreen {	background-color: #333333;}
+.chatWrapper {
+	vertical-align: bottom;
+	/*height: 100%;*/
+}
+
+#divChatScreen, #divContactsScreen {	height: 100%;}
+
+.compose, .search {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 44px;
+	background-color: #ffffff;
+	vertical-align: middle;
+	-webkit-box-shadow: 0px 0 3px #f2f2f2;
+}
+
+.btn, .btnPressed {
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	margin-top: 5px;
+	line-height: 24px;
+	vertical-align: middle;
+	padding: 7px 19px;
+	font-size: 22px;
+	font-weight: bold;
+	-webkit-border-radius: 2px;
+	background-repeat: repeat-x;
+	background-image: -webkit-linear-gradient(top, #82BF4A, #82BF4A);
+	color: #ffffff;
+	/*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
+	background-color: #82BF4A;
+}
+.btn {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 1px 1px 3px #000000;
+}
+.btnPressed {	-webkit-box-shadow: 0 0 0;}
+
+.imgbtn, .imgbtnPressed {
+	margin-right: 8px;
+	margin-left: 8px;
+	margin-bottom: 20px;
+	-webkit-border-radius: 2px;
+}
+.imgbtn {	-webkit-box-shadow: 1px 1px 3px #000000;}
+.imgbtnPressed {	-webkit-box-shadow: 0 0 0;}
+
+.contact, .contactPressed {
+	width: 100%;
+	margin: 1px auto 1px auto;
+	text-align: left;
+	overflow: hidden;
+}
+.contact {	background-color: #ffffff;}
+.contactPressed {	background-color: #F2F2F2;}
+
+.contact div, .contactPressed div {
+	vertical-align: middle;
+	display: inline-block;
+}
+.imgContact {
+	margin: 2px;
+	float: left;
+	width: 64px;
+	height: 64px;
+	-webkit-border-radius: 32px;
+}
+
+.loginLogo {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.loginHeader {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.inputZone {
+	width: 100%;
+	height: 36px;
+	margin-top: 3px;
+	border: 1px;
+	background-color: #E6E6E6;
+	font-family: Lato, sans-serif, serif, mono;
+	font-size: 22px;
+	outline: none;
+	-webkit-border-radius: 2px;
+}
+
+.spanInputContainer {
+	display: block;
+	overflow: hidden;
+	margin-right: 4px;
+}
+
+.bottomInputIcon, .bottomInputIconPressed {
+	float: left;
+	margin-top: 4px;
+	-webkit-border-radius: 2px;
+}
+.bottomInputIcon {
+	background-color: transparent;
+}
+.bottomInputIconPressed {
+	background-color: #F2F2F2;
+}
+
+.leftArrowBack {
+	color: #ffffff;
+	font-size: 68px;
+	line-height: 0px;
+}
+
+.headerNetwork {
+	float: right;
+	margin-top: 7px;
+	margin-right: 4px;
+}
+
+.divMsgWrapSent, .divMsgWrapReceived {	width: 100%;}
+.divMsgWrapSent {
+	text-align: right;
+}
+.divMsgWrapReceived {
+	text-align: left;
+}
+
+.divMsg {
+	background-color: #E8FDD6;
+	background-image: -webkit-linear-gradient(top, #E8FDD6, #ffffff);
+	-webkit-border-radius: 2px;
+	-webkit-box-shadow: 1px 1px 2px #000000;
+	margin: 4px;
+	padding: 2px;
+	text-align: left;
+	min-height: 32px;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.imgMsgSent, .imgMsgReceived {
+	width: 32px;
+	height: 32px;
+	-webkit-border-radius: 16px;
+}
+.imgMsgSent {	float: right;}
+.imgMsgReceived {	float: left;}
+
+.contactTitle, .contactId, .contactPhone {
+	margin-left: 4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.contactTitle {	font-weight: bold;}
+.contactId, .contactPhone {
+	font-size: 12px;
+	color: #c0c0c0;
+}
+
+.smallNetworkLogo {
+	float: right;
+	width: 18px;
+	height: 18px;
+}

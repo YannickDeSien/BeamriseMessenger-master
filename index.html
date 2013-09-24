@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+	<title>Beamrise Messenger</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/touch.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="childbrowser.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div id="divLoading" class="mainWrapper" style="display: none;">
+		<img src="img/loader.gif" />
+		<!--<div>Just a moment...</div>-->
+	</div>
+	<div id="divLoginScreen" style="display: none;">
+		<img src="img/icon57.png" class="loginLogo" />
+		<div class="loginHeader">Connect using your favorite network</div>
+		<p>Access all your contacts from the same App.</p>
+		<img id="btnLoginFB" src="img/fb0.png" class="imgbtn" />
+		<img id="btnLoginGT" src="img/gt0.png" class="imgbtn" />
+		<img id="btnLoginWLM" src="img/wlm0.png" class="imgbtn" />
+		<br />
+		<button id="btnLoginBeamrise" class="btn">Beamrise login</button>
+		<br />
+		<button id="btnContactsDemo" class="btn">Contacts demo</button>
+		<br /><br />
+		<div id="divDebug" style="text-align: left; font-size: 10px;"></div>
+	</div>
+	<div id="divContactsScreen" style="display: none;">
+		<div id="divContactsHeader" class="header">
+			<span id="spanHeaderLabel" class="headerText">My contacts</span>
+			<span id="btnSettings" class="headerRightButton"><img src="img/settings.png" /></span>
+		</div>
+		<div class="contactsWrapper" id="divContacts"></div>
+		<div id="divNoContacts" style="display: none;">No contacts found</div>
+		<img id="imgContactsLoading" src="img/loader.gif" />
+		<div id="divSearchContact" class="search">
+			<img src="img/search.png" id="searchIcon" class="bottomInputIcon" />
+			<span class="spanInputContainer">
+				<input type="text" class="inputZone" id="inputSearchContact" placeholder="Search buddies" />
+			</span>
+		</div>
+	</div>
+	<div id="divChatScreen" style="display: none;">
+		<div id="divChatScreenHeader" class="header">
+			<div class="headerIcon" id="divBackBtn1">
+				<span class="leftArrowBack">&#139;</span><img src="img/icon36.png" style="margin-top: 6px;" />
+			</div>
+			<span id="spanChatLabel" class="headerText"></span>
+			<div class="headerNetwork">
+				<img id="imgChatNetworkLogo" src="img/phone0.png" />
+			</div>
+		</div>
+		<div class="chatWrapper" id="divChatMessages"></div>
+		<div id="divCompose" class="compose">
+			<form id="formChatMsg">
+				<img src="img/sendEmoticons.png" id="chatMsgIcon" class="bottomInputIcon" />
+				<span class="spanInputContainer">
+					<input type="text" class="inputZone" id="inputChatMsg" placeholder="Write a message" />
+				</span>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
